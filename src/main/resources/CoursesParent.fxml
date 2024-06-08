@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Parent.CoursesParent">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="1027.0" stylesheets="@style.css">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1024.0" spacing="14.0" styleClass="white-background" stylesheets="@style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="78.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/mg1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label alignment="CENTER" prefHeight="59.0" prefWidth="116.0" text="MagicMinds">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="29.0" prefWidth="2.0" />
+                  <Pane prefHeight="65.0" prefWidth="272.0" stylesheets="@style.css" HBox.hgrow="ALWAYS" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="170.0">
+                     <children>
+                        <Label prefHeight="63.0" prefWidth="139.0">
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="51.0" fitWidth="57.0" onMouseClicked="#updateProfile" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/man.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </HBox>
+         </top>
+         <left>
+            <VBox prefHeight="522.0" prefWidth="231.0" spacing="10.0" styleClass="white-background" stylesheets="@style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="69.0" prefWidth="231.0" spacing="2.0">
+                     <children>
+                        <Label prefHeight="12.0" prefWidth="47.0" text="home">
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="205.0" spacing="15.0" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/house.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="34.0" prefWidth="157.0" text="Home" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <styleClass>
+                              <String fx:value="mouse-moved" />
+                              <String fx:value="fron_btn" />
+                           </styleClass>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="126.0" prefWidth="231.0" spacing="6.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="127.0" text="Store">
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="231.0" spacing="15.0" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="34.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/store.png" />
+                                 </image>
+                              </ImageView>
+                              <Label onMouseClicked="#goToStore" prefHeight="34.0" prefWidth="152.0" text="products" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <styleClass>
+                              <String fx:value="mouse-moved" />
+                              <String fx:value="fron_btn" />
+                           </styleClass>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="30.0" prefHeight="137.0" prefWidth="231.0" spacing="6.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="127.0" text="corses">
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="47.0" prefWidth="224.0" spacing="15.0" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/online-course.png" />
+                                 </image>
+                              </ImageView>
+                              <Label onMouseClicked="#goCourse" prefHeight="34.0" prefWidth="152.0" text="Courses" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <styleClass>
+                              <String fx:value="mouse-moved" />
+                              <String fx:value="fron_btn" />
+                           </styleClass>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="137.0" prefWidth="231.0" spacing="6.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="127.0" text="athrer">
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="231.0" spacing="15.0" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/calendar.png" />
+                                 </image>
+                              </ImageView>
+                              <Label onMouseClicked="#goEvent" prefHeight="34.0" prefWidth="152.0" text="Events" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <styleClass>
+                              <String fx:value="mouse-moved" />
+                              <String fx:value="fron_btn" />
+                           </styleClass>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="72.0" prefWidth="222.0">
+                     <children>
+                        <ImageView fitHeight="64.0" fitWidth="62.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/log-out.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </padding>
+            </VBox>
+         </left>
+         <center>
+            <VBox fx:id="editable" prefHeight="613.0" prefWidth="796.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane prefHeight="613.0" prefWidth="796.0" styleClass="trasparent" stylesheets="@style.css" VBox.vgrow="ALWAYS">
+                     <content>
+                        <VBox fx:id="Containe" maxHeight="560.0" maxWidth="765.0" minHeight="560.0" minWidth="765.0" prefHeight="560.0" prefWidth="765.0">
+                           <children>
+                              <Pane fx:id="Content" prefHeight="564.0" prefWidth="761.0">
+                                 <children>
+                                    <HBox fx:id="bar" prefHeight="54.0" prefWidth="764.0" spacing="15.0">
+                                       <children>
+                                          <Label prefHeight="35.0" prefWidth="217.0" text="Categories List : ">
+                                             <font>
+                                                <Font name="Verdana" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="8.0" left="10.0" top="8.0" />
+                                       </padding>
+                                    </HBox>
+                                    <Pane fx:id="pageContainer" layoutY="75.0" prefHeight="490.0" prefWidth="764.0" />
+                                    <Line endX="638.0" layoutX="109.0" layoutY="66.0" startX="-100.0" stroke="#fe5d37" strokeWidth="2.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

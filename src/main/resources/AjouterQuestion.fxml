@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="598.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterQuestion">
+   <children>
+      <Text fill="#c62d25" layoutX="300.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choice 3:">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text fill="#c62d25" layoutX="305.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz_id:">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text fill="#c62d25" layoutX="298.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question:">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text fill="#c62d25" layoutX="300.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choice 2:">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text fill="#c62d25" layoutX="300.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choice 1:">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text fill="#c62d25" layoutX="300.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correct answer:">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <TextField fx:id="tfQuizId" layoutX="432.0" layoutY="119.0" styleClass="label-info" stylesheets="@DashbordDesign.css" />
+      <TextField fx:id="tfReponse" layoutX="432.0" layoutY="488.0" styleClass="label-info" stylesheets="@DashbordDesign.css" />
+      <TextField fx:id="tfChoix3" layoutX="432.0" layoutY="422.0" styleClass="label-info" stylesheets="@DashbordDesign.css" />
+      <TextField fx:id="tfChoix2" layoutX="432.0" layoutY="352.0" styleClass="label-info" stylesheets="@DashbordDesign.css" />
+      <TextField fx:id="tfChoix1" layoutX="432.0" layoutY="276.0" styleClass="label-info" stylesheets="@DashbordDesign.css" />
+      <TextField fx:id="tfQuestion" layoutX="432.0" layoutY="204.0" styleClass="label-info" stylesheets="@DashbordDesign.css" />
+      <Button fx:id="tfAddQuestion" layoutX="300.0" layoutY="547.0" mnemonicParsing="false" onAction="#AddQuestion" styleClass="add-btn" stylesheets="@DashbordDesign.css" text="add Question" />
+      <Pane layoutX="-1.0" prefHeight="59.0" prefWidth="782.0">
+         <children>
+            <TextField fx:id="txt_search" layoutX="439.0" layoutY="14.0" promptText="Seach:" stylesheets="@style.css">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="395.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/search.png" />
+               </image>
+            </ImageView>
+            <Button alignment="CENTER" contentDisplay="TOP" layoutX="652.0" layoutY="5.0" mnemonicParsing="false" opacity="0.3" prefHeight="49.0" prefWidth="61.0" />
+            <ImageView fitHeight="51.0" fitWidth="49.0" layoutX="657.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/man.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="side_bar" layoutX="-2.0" prefHeight="622.0" prefWidth="231.0" styleClass="side_bar" stylesheets="@style.css">
+         <children>
+            <Pane fx:id="inner_pane" layoutX="13.0" layoutY="14.0" prefHeight="67.0" prefWidth="200.0" styleClass="inner_pane" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="81.0" fitWidth="79.0" layoutX="-2.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="70.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin dashbord">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button fx:id="btn_user" layoutX="13.0" layoutY="110.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="200.0" styleClass="btn_home" stylesheets="@style.css" text="users">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="34.0" fitWidth="53.0" layoutX="29.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/user.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_store" layoutX="14.0" layoutY="165.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="200.0" styleClass="btn_home" stylesheets="@style.css" text="store">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="34.0" fitWidth="53.0" layoutX="30.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/store.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_corses" layoutX="14.0" layoutY="234.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="200.0" styleClass="btn_home" stylesheets="@style.css" text="Courses">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="34.0" fitWidth="53.0" layoutX="30.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/video-lesson.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_events" layoutX="14.0" layoutY="299.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="200.0" styleClass="btn_home" stylesheets="@style.css" text="Events">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="34.0" fitWidth="53.0" layoutX="30.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/calendar.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_forum" layoutX="15.0" layoutY="368.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="200.0" styleClass="btn_home" stylesheets="@style.css" text="Forum">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="34.0" fitWidth="53.0" layoutX="31.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/chat.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_quizzs" layoutX="14.0" layoutY="438.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="200.0" styleClass="btn_home" stylesheets="@style.css" text="Quizzes">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="34.0" fitWidth="53.0" layoutX="30.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/quiz.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="110.0" fitWidth="134.0" layoutX="48.0" layoutY="488.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/ui.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

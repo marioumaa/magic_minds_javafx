@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- L'image de fond -->
+
+<AnchorPane id="AnchorPane" prefHeight="896.0" prefWidth="1338.0" style="-fx-background-color: #FFFF;" stylesheets="@fullpackstyling.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RunController">
+   <children>
+      <Button fx:id="Prof" layoutX="396.0" layoutY="249.0" mnemonicParsing="false" onAction="#Prof" prefHeight="60.0" prefWidth="273.0" style="-fx-background-radius: 30;" text="Prof" textFill="RED" />
+      <Label fx:id="idLabel" layoutX="31.0" layoutY="98.0" prefHeight="18.0" prefWidth="37.0" />
+      <Button fx:id="Eleve" layoutX="396.0" layoutY="120.0" mnemonicParsing="false" onAction="#Eleve" prefHeight="60.0" prefWidth="273.0" style="-fx-background-radius: 30;" text="Eleve" textFill="RED" />
+      <Button fx:id="Admin" layoutX="396.0" layoutY="367.0" mnemonicParsing="false" onAction="#Admin" prefHeight="60.0" prefWidth="273.0" style="-fx-background-radius: 30;" text="Admin" textFill="RED" />
+
+   </children>
+</AnchorPane>

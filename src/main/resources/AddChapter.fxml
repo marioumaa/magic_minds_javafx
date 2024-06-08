@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addchapteranchor" maxHeight="400.0" maxWidth="650.0" minHeight="400.0" minWidth="650.0" prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Ressource.AddChapter">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="650.0">
+         <children>
+            <Label layoutX="58.0" layoutY="32.0" prefHeight="17.0" prefWidth="196.0" text="Add Chapter" textFill="#256b51">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <VBox layoutY="102.0" prefHeight="163.0" prefWidth="650.0">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="582.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="95.0" text="Title : ">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addChapTiltle" prefHeight="30.0" prefWidth="410.0" styleClass="textfield" stylesheets="@DashbordDesign.css" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </HBox>
+                  <Label fx:id="ECtitre" prefHeight="25.0" prefWidth="410.0" textFill="#b50000">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="95.0" top="3.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="37.0" prefWidth="510.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="95.0" text="Course : ">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="addChapCour" prefHeight="30.0" prefWidth="220.0" styleClass="textfield" stylesheets="@DashbordDesign.css" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="3.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="582.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="95.0" text="Type of file : ">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="addChapType" prefHeight="30.0" prefWidth="220.0" styleClass="textfield" stylesheets="@DashbordDesign.css" />
+                        <Button fx:id="uploadFile" mnemonicParsing="false" onAction="#uploadFile" prefHeight="30.0" prefWidth="180.0" text="Choose File ">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </HBox>
+                  <Label fx:id="displayUrl" prefHeight="27.0" prefWidth="505.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="70.0" right="70.0" />
+               </padding>
+            </VBox>
+            <Button fx:id="InsertChap" layoutX="530.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#addChap" prefHeight="35.0" prefWidth="78.0" styleClass="btn_home" stylesheets="@style.css" text="Add ">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" layoutX="445.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="35.0" prefWidth="78.0" styleClass="btn_home" stylesheets="@style.css" text="Back">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

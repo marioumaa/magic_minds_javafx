@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" prefHeight="139.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SamplePanierController">
+   <children>
+      <ImageView fx:id="img" fitHeight="117.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/man.png" />
+         </image>
+         <HBox.margin>
+            <Insets left="8.0" />
+         </HBox.margin>
+      </ImageView>
+      <Label fx:id="name" prefHeight="26.0" prefWidth="82.0" text="Mohamed">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets left="6.0" />
+         </padding>
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="price" layoutX="53.0" layoutY="27.0" prefHeight="37.0" prefWidth="118.0" text="Desacription">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font></Label>
+      <Label fx:id="qt" layoutX="115.0" layoutY="14.0" prefHeight="30.0" prefWidth="62.0" text="date">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font></Label>
+      <Label fx:id="tt" layoutX="258.0" layoutY="24.0" prefHeight="30.0" prefWidth="62.0" text="date">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="92.0" spacing="5.0">
+         <children>
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#delete_item" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: #fef437; -fx-background-radius: 50;">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/remove.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</HBox>

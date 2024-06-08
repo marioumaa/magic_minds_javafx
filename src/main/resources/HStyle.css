@@ -1,0 +1,196 @@
+.cardCat{
+    -fx-pref-width:200px;
+    -fx-pref-height: 200px;
+    -fx-padding:10px 10px 10px 10px;
+    -fx-background-color: #e6e6fa;
+    -fx-effect: dropshadow(gaussian, rgb(128, 128, 128), 5, 0.3, 3, 3);
+}
+.cardCat:hover{
+    -fx-background-color: #9cd3b2;
+}
+.title{
+    -fx-pref-width:180px;
+    -fx-pref-height: 40px;
+    -fx-text-fill: black;
+    -fx-font-family:"Arial Rounded MT Bold";
+    -fx-font-size:16px;
+    -fx-alignment: center;
+
+}
+.titleD{
+    -fx-pref-width:180px;
+    -fx-pref-height: 40px;
+    -fx-text-fill: black;
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-size:16px;
+
+}
+.titleChap{
+    -fx-pref-width:100px;
+    -fx-pref-height: 40px;
+    -fx-text-fill: black;
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-size:14px;
+}
+.titleC{
+    -fx-pref-width:120px;
+    -fx-pref-height: 40px;
+    -fx-text-fill: black;
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-size:16px;
+}
+.descr{
+    -fx-pref-width:450px;
+    -fx-font-size:13px;
+}
+.refresh{
+    -fx-pref-width:35px;
+    -fx-pref-height: 35px;
+    -fx-background-color: #369669;
+    -fx-background-radius:20;
+    -fx-border-color: black;
+    -fx-border-radius:20;
+    -fx-border-width: 0.5;
+    -fx-start-margin: 300px;
+}
+.back{
+    -fx-background-color: rgba(54, 150, 105, 0);
+    -fx-pref-width:35px;
+    -fx-pref-height: 35px;
+    -fx-border-color: rgba(0, 0, 0, 0);
+}
+.del{
+    -fx-background-color: rgba(54, 150, 105, 0);
+    -fx-pref-width:20px;
+    -fx-pref-height: 20px;
+    -fx-border-color: rgba(0, 0, 0, 0);
+}
+.Add{
+    -fx-pref-width:160px;
+    -fx-pref-height: 35px;
+    -fx-background-color: #369669;
+    -fx-background-radius:15;
+    -fx-border-color: black;
+    -fx-border-radius:15;
+    -fx-border-width: 0.5;
+    -fx-font-family:"Arial Rounded MT Bold";
+    -fx-text-fill: white;
+    -fx-font-size:14px;
+}
+.catD{
+    -fx-pref-width:659px;
+    -fx-pref-height: 150px;
+    -fx-padding:10px 10px 10px 10px;
+    -fx-start-margin: 41px;
+    -fx-background-color: #e6e6fa;
+    -fx-effect: dropshadow(gaussian, rgb(128, 128, 128), 5, 0.3, 3, 3);
+}
+.cardC{
+    -fx-pref-width:227.3px;
+    -fx-pref-height: 100px;
+    -fx-padding:10px 10px 10px 10px;
+    -fx-background-color: #e6e6fa;
+    -fx-effect: dropshadow(gaussian, rgb(128, 128, 128), 5, 0.3, 3, 3);
+}
+.cardC:hover{
+    -fx-background-color: #9cd3b2;
+}
+.cardChap{
+    -fx-pref-width:227.3px;
+    -fx-pref-height: 100px;
+    -fx-padding:0px 2px 0px 0px;
+    -fx-background-color: #e6e6fa;
+    -fx-effect: dropshadow(gaussian, rgb(128, 128, 128), 5, 0.3, 3, 3);
+}
+.cardChap:hover{
+    -fx-background-color: #9cd3b2;
+}
+.test{
+    -fx-background-color: rgba(54, 150, 105, 0);
+    -fx-pref-width:290px;
+    -fx-pref-height: 35px;
+    -fx-border-color: rgba(0, 0, 0, 0);
+}
+.Nchap{
+    -fx-font-size: 25;
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-text-fill: #FE5D37;
+}
+.msg {
+    -fx-pref-width:90px;
+    -fx-pref-height: 20px;
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-size:18px;
+    -fx-start-margin: 20px;
+}
+
+.pane {
+    -fx-background-color: rgba(36, 76, 91, 0.5);
+    -fx-background-radius: 20px;
+    -fx-border-color:#103641;
+    -fx-border-width:.3px .3px .3px .3px;
+    -fx-border-radius: 20px;
+    -fx-pref-width: 360px;
+    -fx-pref-height: 200px;
+}
+
+.pane:hover {
+    -fx-background-color: #f1aa85;
+}
+.prog{
+    -fx-background-radius: 8px;
+}
+.ph{
+    -fx-border-color:#FE5D37;
+    -fx-border-radius: 8px;
+}
+
+
+.pane_det{
+    -fx-background-color: rgba(36, 76, 91, 0.5);
+    -fx-background-radius: 20px;
+    -fx-border-color:#103641;
+    -fx-border-width:.3px .3px .3px .3px;
+    -fx-border-radius: 20px;
+    -fx-pref-width: 500px;
+    -fx-pref-height: 140px;
+}
+.label_Title {
+    -fx-pref-width: 150px;
+    -fx-pref-height: 25px;
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+}
+.label_Desc {
+    -fx-pref-width: 170px;
+    -fx-pref-height: 120px;
+    -fx-font-size: 13px;
+}
+.label_Desc1 {
+    -fx-pref-width: 380px;
+    -fx-pref-height: 50px;
+    -fx-font-size: 13px;
+}
+.label_DescC{
+    -fx-pref-width: 170px;
+    -fx-pref-height: 50px;
+    -fx-font-size: 13px;
+}
+.combo-box{
+    -fx-background-color: rgb(0, 0, 0);
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: rgb(0, 0, 0);
+}
+.text-field{
+    -fx-font-fill:white;
+}
+.cardPro{
+    -fx-pref-width:550px;
+    -fx-pref-height: 80px;
+    -fx-background-color: #e6e6fa;
+    -fx-effect: dropshadow(gaussian, rgb(128, 128, 128), 5, 0.3, 3, 3);
+}
+

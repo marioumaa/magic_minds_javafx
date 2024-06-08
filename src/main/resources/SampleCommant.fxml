@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="409.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SampleCommantController">
+   <children>
+      <ImageView fx:id="img" fitHeight="47.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/man.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="name" prefHeight="26.0" prefWidth="82.0" text="Mohamed">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets left="6.0" />
+         </padding>
+      </Label>
+      <Label fx:id="desc" layoutX="53.0" layoutY="27.0" prefHeight="37.0" prefWidth="118.0" text="Desacription" />
+      <Label fx:id="date" layoutX="115.0" layoutY="14.0" prefHeight="30.0" prefWidth="62.0" text="date" />
+      <HBox alignment="CENTER" prefHeight="33.0" prefWidth="88.0" spacing="5.0">
+         <children>
+            <Button fx:id="detbtn" mnemonicParsing="false" onAction="#delcommant" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: #fef437; -fx-background-radius: 50;">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/remove.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="updatebtn" layoutX="33.0" layoutY="18.0" mnemonicParsing="false" onAction="#updatecommant" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: #fef437; -fx-background-radius: 50;">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/updated.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</HBox>

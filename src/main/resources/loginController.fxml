@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="549.0" prefWidth="721.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-6.0" prefHeight="560.0" prefWidth="321.0" style="-fx-background-color: rgb(254, 93, 55);">
+         <children>
+            <ImageView fitHeight="198.0" fitWidth="241.0" layoutX="51.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/mg1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <FontAwesomeIconView fill="#fe5d37" glyphName="USERS" layoutX="497.0" layoutY="129.0" size="60" />
+      <Text fill="#fe5d37" layoutX="474.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="email" layoutX="437.0" layoutY="238.0" prefHeight="29.0" prefWidth="185.0" promptText="Your email ..." style="-fx-border-color: rgb(254, 93, 55);" stylesheets="@TEXTFIELD.css" />
+      <Button layoutX="460.0" layoutY="352.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="29.0" prefWidth="139.0" style="-fx-background-color: rgb(254, 93, 55);" stylesheets="@btnSave.css" text="Login" textFill="WHITE">
+         <styleClass>
+            <String fx:value="btn_home" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </Button>
+      <FontAwesomeIconView fill="#fe5d37" glyphName="USER" layoutX="405.0" layoutY="261.0" size="25" />
+      <FontAwesomeIconView fill="#fe5d37" glyphName="KEY" layoutX="404.0" layoutY="318.0" size="20" text="" />
+      <Hyperlink graphicTextGap="10.0" layoutX="481.0" layoutY="415.0" onMouseClicked="#forgetPasswordPage" text="Forgot Password" />
+      <Hyperlink graphicTextGap="10.0" layoutX="475.0" layoutY="453.0" onMouseClicked="#registrationPage" text="Create an Account!" />
+      <FontAwesomeIconView fill="#fe5d37" glyphName="CLOSE" layoutX="687.0" layoutY="36.0" onMouseClicked="#close" size="20" />
+      <Text fx:id="emailControl" layoutX="423.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="277.0" />
+      <Text fx:id="passwordControl" layoutX="423.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="277.0" />
+      <Text fx:id="generaleErrors" layoutX="337.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="385.0" />
+      <PasswordField fx:id="passwordId" layoutX="437.0" layoutY="296.0" prefHeight="29.0" prefWidth="185.0" promptText="Your Password ..." style="-fx-border-color: rgb(254, 93, 55);" stylesheets="@TEXTFIELD.css" />
+   </children>
+</AnchorPane>

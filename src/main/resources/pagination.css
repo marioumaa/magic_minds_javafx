@@ -1,0 +1,23 @@
+.pagination {
+    -fx-padding: 5px;
+}
+
+.pagination .page-count {
+    -fx-padding: 0 10px;
+    -fx-font-size: 14px;
+}
+
+.pagination .page-indicator {
+    -fx-padding: 0 5px;
+    -fx-font-size: 14px;
+}
+
+.pagination .arrow-button {
+    -fx-padding: 5px;
+    -fx-shape: "M 0 0 L 10 5 L 0 10 Z"; /* flèche vers la droite */
+    -fx-background-color: transparent;
+}
+
+.pagination .arrow-button:hover {
+    -fx-background-color: lightgrey;
+}

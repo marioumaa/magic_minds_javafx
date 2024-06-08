@@ -1,0 +1,18 @@
+.upload-button {
+    -fx-background-color: #007bff; /* Couleur de fond */
+    -fx-text-fill: #ffffff; /* Couleur du texte */
+    -fx-padding: 10px 20px; /* Marge interne */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+    -fx-border-color: #007bff; /* Couleur de la bordure */
+    -fx-font-size: 14px; /* Taille de la police */
+}
+
+.upload-button:hover {
+    -fx-background-color: #0056b3; /* Couleur de fond au survol */
+    -fx-border-color: #0056b3; /* Couleur de la bordure au survol */
+}
+
+.upload-button:pressed {
+    -fx-background-color: #004080; /* Couleur de fond lorsqu'appuyé */
+    -fx-border-color: #004080; /* Couleur de la bordure lorsqu'appuyé */
+}

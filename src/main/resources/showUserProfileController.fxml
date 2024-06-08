@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="521.0" prefWidth="622.0" style="-fx-border-color: #353A56; -fx-border-width: 8px; -fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.showUserProfileController">
+   <children>
+      <Line endX="-88.0" endY="211.0" layoutX="318.0" layoutY="152.0" startX="-88.0" startY="-102.0" stroke="#353a56" />
+      <ImageView fx:id="image1" fitHeight="135.0" fitWidth="176.0" layoutX="52.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/man.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="grandName" fill="#353a56" layoutX="32.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ben Slimen Louay">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#353a56" layoutX="277.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#353a56" layoutX="279.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#353a56" layoutX="288.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#353a56" layoutX="292.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#353a56" layoutX="291.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#353a56" layoutX="284.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="firstname" fill="#2f2f2f" layoutX="436.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Louay">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="lastname" fill="#2f2f2f" layoutX="423.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ben slimen">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="email" fill="#2f2f2f" layoutX="391.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="benslimen.louay@esprit.tn">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="age" fill="#2f2f2f" layoutX="446.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="26">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="tel" fill="#2f2f2f" layoutX="436.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="51029983">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="gender" fill="#2f2f2f" layoutX="446.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Male">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <FontAwesomeIconView fill="#353a56" glyphName="CLOSE" layoutX="570.0" layoutY="45.0" onMouseClicked="#close" size="25" />
+      <Text fill="#353a56" layoutX="303.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="role" fill="#2f2f2f" layoutX="448.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Line endX="224.0" layoutX="381.0" layoutY="95.0" startX="-100.0" />
+      <Line endX="216.0" layoutX="383.0" layoutY="143.0" startX="-100.0" />
+      <Line endX="213.0" layoutX="383.0" layoutY="193.0" startX="-100.0" />
+      <Line endX="213.0" layoutX="384.0" layoutY="245.0" startX="-100.0" />
+      <Line endX="213.0" layoutX="386.0" layoutY="292.0" startX="-100.0" />
+      <Line endX="213.0" layoutX="382.0" layoutY="336.0" startX="-99.0" />
+      <Line endX="213.0" layoutX="384.0" layoutY="392.0" startX="-100.0" />
+      <Button layoutX="279.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#updateProfilePage" prefHeight="39.0" prefWidth="97.0" styleClass="btn_home" stylesheets="@btnSave.css" text="Update" />
+      <Button layoutX="440.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#changePasswordPage" prefHeight="39.0" prefWidth="123.0" styleClass="btn_home" stylesheets="@btnSave.css" text="Change Password" />
+   </children>
+</AnchorPane>

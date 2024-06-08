@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="afficherCategrie" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="956.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin.GestionCours">
+    <children>
+        <VBox prefHeight="612.0" prefWidth="226.0">
+            <children>
+                <AnchorPane fx:id="side_bar" prefHeight="612.0" prefWidth="170.0" styleClass="side_bar" stylesheets="@style.css">
+                    <children>
+                        <Pane fx:id="dashboard" layoutX="13.0" layoutY="14.0" onMouseClicked="#GoToDashboard" prefHeight="67.0" prefWidth="200.0" styleClass="inner_pane" stylesheets="@style.css">
+                            <children>
+                                <ImageView fitHeight="81.0" fitWidth="79.0" layoutX="-2.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/logo.png" />
+                                    </image>
+                                </ImageView>
+                                <Text fill="WHITE" layoutX="70.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin dashbord">
+                                    <font>
+                                        <Font name="Century Gothic Bold Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </Pane>
+                        <Button fx:id="btn_user" layoutX="13.0" layoutY="110.0" mnemonicParsing="false" onMouseClicked="#goUser" prefHeight="42.0" prefWidth="200.0" styleClass="btn_home" stylesheets="@style.css" text="users">
+                            <font>
+                                <Font name="Century Gothic Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="34.0" fitWidth="53.0" layoutX="29.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/user.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="btn_store" layoutX="14.0" layoutY="165.0" mnemonicParsing="false" onMouseClicked="#goStore" prefHeight="42.0" prefWidth="200.0" styleClass="btn_home" stylesheets="@style.css" text="store">
+                            <font>
+                                <Font name="Century Gothic Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="34.0" fitWidth="53.0" layoutX="30.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/store.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="btn_corses" layoutX="14.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#goCourses" prefHeight="42.0" prefWidth="200.0" styleClass="btn_home" stylesheets="@style.css" text="Courses">
+                            <font>
+                                <Font name="Century Gothic Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="34.0" fitWidth="53.0" layoutX="30.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/video-lesson.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="btn_events" layoutX="14.0" layoutY="299.0" mnemonicParsing="false" onMouseClicked="#goEvent" prefHeight="42.0" prefWidth="200.0" styleClass="btn_home" stylesheets="@style.css" text="Events">
+                            <font>
+                                <Font name="Century Gothic Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="34.0" fitWidth="53.0" layoutX="30.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/calendar.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="btn_forum" layoutX="15.0" layoutY="368.0" mnemonicParsing="false" onMouseClicked="#goForum" prefHeight="42.0" prefWidth="200.0" styleClass="btn_home" stylesheets="@style.css" text="Forum">
+                            <font>
+                                <Font name="Century Gothic Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="34.0" fitWidth="53.0" layoutX="31.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/chat.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="btn_quizzs" layoutX="14.0" layoutY="438.0" mnemonicParsing="false" onMouseClicked="#goQuizz" prefHeight="42.0" prefWidth="200.0" styleClass="btn_home" stylesheets="@style.css" text="Quizzs">
+                            <font>
+                                <Font name="Century Gothic Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="34.0" fitWidth="53.0" layoutX="30.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/quiz.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="110.0" fitWidth="134.0" layoutX="48.0" layoutY="488.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/ui.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+        <Pane prefHeight="630.0" prefWidth="730.0">
+            <children>
+                <Pane layoutX="-3.0" prefHeight="51.0" prefWidth="739.0">
+                    <children>
+                        <TextField fx:id="txt_search" layoutX="439.0" layoutY="14.0" onAction="#txtsearch" promptText="Seach:" styleClass="text-field" stylesheets="@style.css">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="14.0" />
+                            </font>
+                        </TextField>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="395.0" layoutY="9.0" onMouseClicked="#search" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/search.png" />
+                            </image>
+                        </ImageView>
+                        <Button alignment="CENTER" contentDisplay="TOP" layoutX="652.0" layoutY="5.0" mnemonicParsing="false" opacity="0.3" prefHeight="49.0" prefWidth="61.0" />
+                        <ImageView fitHeight="51.0" fitWidth="49.0" layoutX="657.0" layoutY="5.0" onMouseClicked="#updateProfile" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/man.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <AnchorPane layoutX="25.0" layoutY="87.0" prefHeight="509.0" prefWidth="691.0" stylesheets="@DashbordDesign.css">
+                    <styleClass>
+                        <String fx:value="white-bg" />
+                        <String fx:value="shadow" />
+                    </styleClass>
+               <children>
+                  <TabPane fx:id="tabpane" prefHeight="509.0" prefWidth="691.0" stylesheets="@DashbordDesign.css" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Categories">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@DashbordDesign.css">
+                                 <children>
+                                    <TableView fx:id="showCat" layoutX="14.0" layoutY="51.0" prefHeight="215.0" prefWidth="663.0" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="51.0">
+                                      <columns>
+                                        <TableColumn fx:id="catTitleCol" prefWidth="182.0" text="Title" />
+                                        <TableColumn fx:id="catDescCol" prefWidth="373.0" text="Description" />
+                                          <TableColumn fx:id="CatAction" prefWidth="107.0" text="Actions" />
+                                      </columns>
+                                    </TableView>
+                                    <Pane layoutX="14.0" layoutY="266.0" prefHeight="188.0" prefWidth="663.0" style="-fx-border-color: #272b3f; -fx-border-radius: 10;" stylesheets="@DashbordDesign.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="278.0">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                       <children>
+                                          <ImageView fx:id="DImg" fitHeight="130.0" fitWidth="130.0" layoutX="519.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/logo.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="26.0" layoutY="7.0" prefHeight="28.0" prefWidth="170.0" styleClass="white-bg" stylesheets="@DashbordDesign.css" text="Category Details" textFill="#0e6531">
+                                             <font>
+                                                <Font name="Verdana" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox layoutX="26.0" layoutY="28.0" prefHeight="151.0" prefWidth="480.0" spacing="10.0">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <children>
+                                                <HBox prefHeight="35.0" prefWidth="441.0">
+                                                   <children>
+                                                      <Label prefHeight="19.0" prefWidth="51.0" text="Title :">
+                                                         <font>
+                                                            <Font name="Arial Rounded MT Bold" size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="Dtitle" prefHeight="19.0" prefWidth="202.0">
+                                                         <font>
+                                                            <Font size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets right="5.0" top="3.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox prefHeight="39.0" prefWidth="470.0">
+                                                   <children>
+                                                      <Label prefHeight="19.0" prefWidth="65.0" text="Courses :">
+                                                         <font>
+                                                            <Font name="Arial Rounded MT Bold" size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="DNbCours" prefHeight="24.0" prefWidth="85.0">
+                                                         <font>
+                                                            <Font size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label prefHeight="24.0" prefWidth="71.0" text="Chapters :">
+                                                         <font>
+                                                            <Font name="Arial Rounded MT Bold" size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="DNbchap" prefHeight="19.0" prefWidth="72.0">
+                                                         <font>
+                                                            <Font size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets right="5.0" top="3.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <VBox prefHeight="77.0" prefWidth="467.0">
+                                                         <HBox.margin>
+                                                            <Insets right="5.0" top="3.0" />
+                                                         </HBox.margin>
+                                                         <children>
+                                                            <Label prefHeight="24.0" text="descripotion :">
+                                                               <VBox.margin>
+                                                                  <Insets bottom="2.0" />
+                                                               </VBox.margin>
+                                                               <font>
+                                                                  <Font name="Arial Rounded MT Bold" size="13.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label fx:id="Ddescrip" alignment="TOP_LEFT" maxHeight="48.0" maxWidth="463.0" minHeight="48.0" minWidth="463.0" prefHeight="48.0" prefWidth="463.0" wrapText="true" />
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="addCat" layoutX="527.0" layoutY="11.0" mnemonicParsing="false" onMouseClicked="#OpenAdd" prefHeight="34.0" prefWidth="150.0" styleClass="btn_home" stylesheets="@style.css" text="Add new Category">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="refresh_btn" layoutX="329.0" layoutY="11.0" mnemonicParsing="false" onAction="#refreshTab" prefHeight="34.0" prefWidth="34.0" styleClass="btn_home" stylesheets="@style.css" />
+                                    <Button fx:id="downPDF" layoutX="371.0" layoutY="11.0" mnemonicParsing="false" onMouseClicked="#DownloadPDF" prefHeight="34.0" prefWidth="150.0" styleClass="btn_home" stylesheets="@style.css" text="download PDF">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </children></AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab fx:id="CourseTab" text="Courses">
+                           <content>
+                              <AnchorPane fx:id="CourseList" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@DashbordDesign.css">
+                                 <children>
+                                    <TableView fx:id="showCours" layoutX="14.0" layoutY="51.0" prefHeight="215.0" prefWidth="663.0" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="51.0">
+                                       <columns>
+                                          <TableColumn fx:id="coursTitleCol" prefWidth="139.0" text="Title" />
+                                          <TableColumn fx:id="coursDescCol" prefWidth="302.0" text="Description" />
+                                          <TableColumn fx:id="coursStatusCol" minWidth="0.0" prefWidth="96.0" text="Status" />
+                                          <TableColumn fx:id="CoursAction" prefWidth="125.0" text="Actions" />
+                                       </columns>
+                                    </TableView>
+                                    <Pane layoutX="14.0" layoutY="266.0" prefHeight="188.0" prefWidth="663.0" style="-fx-border-color: #272b3f; -fx-border-radius: 10;" stylesheets="@DashbordDesign.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="278.0">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                       <children>
+                                          <Label layoutX="26.0" layoutY="8.0" prefHeight="28.0" prefWidth="170.0" styleClass="white-bg" stylesheets="@DashbordDesign.css" text="Course Details" textFill="#0e6531">
+                                             <font>
+                                                <Font name="Verdana" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox layoutX="26.0" layoutY="28.0" prefHeight="151.0" prefWidth="613.0" spacing="10.0">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <children>
+                                                <HBox prefHeight="35.0" prefWidth="441.0">
+                                                   <children>
+                                                      <Label prefHeight="19.0" prefWidth="53.0" text="Title :">
+                                                         <font>
+                                                            <Font name="Arial Rounded MT Bold" size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="DCtitle" prefHeight="19.0" prefWidth="209.0">
+                                                         <font>
+                                                            <Font size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label prefHeight="19.0" prefWidth="84.0" text="Category :">
+                                                         <font>
+                                                            <Font name="Arial Rounded MT Bold" size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="Dcat" prefHeight="19.0" prefWidth="209.0">
+                                                         <font>
+                                                            <Font size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets right="5.0" top="3.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox prefHeight="39.0" prefWidth="470.0">
+                                                   <children>
+                                                      <Label prefHeight="19.0" prefWidth="65.0" text="Period :">
+                                                         <font>
+                                                            <Font name="Arial Rounded MT Bold" size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="Dperiode" prefHeight="19.0" prefWidth="198.0">
+                                                         <font>
+                                                            <Font size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label prefHeight="19.0" prefWidth="156.0" text="Number of chapters :">
+                                                         <font>
+                                                            <Font name="Arial Rounded MT Bold" size="14.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="DCNbchap" prefHeight="24.0" prefWidth="117.0">
+                                                         <font>
+                                                            <Font size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets right="5.0" top="3.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <VBox prefHeight="74.0" prefWidth="597.0">
+                                                         <HBox.margin>
+                                                            <Insets right="5.0" top="3.0" />
+                                                         </HBox.margin>
+                                                         <children>
+                                                            <Label prefHeight="24.0" text="descripotion :">
+                                                               <VBox.margin>
+                                                                  <Insets bottom="2.0" />
+                                                               </VBox.margin>
+                                                               <font>
+                                                                  <Font name="Arial Rounded MT Bold" size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label fx:id="DCdescrip" alignment="TOP_LEFT" maxHeight="48.0" maxWidth="593.0" minHeight="48.0" minWidth="463.0" prefHeight="48.0" prefWidth="593.0" wrapText="true" />
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </Pane>
+                                    <Button fx:id="addCours" layoutX="493.0" layoutY="11.0" mnemonicParsing="false" onMouseClicked="#OpenAddCours" prefHeight="34.0" prefWidth="181.0" styleClass="btn_home" stylesheets="@style.css" text="Add new Course">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="refreshC_btn" layoutX="438.0" layoutY="11.0" mnemonicParsing="false" onAction="#refreshCTab" prefHeight="34.0" prefWidth="34.0" styleClass="btn_home" stylesheets="@style.css" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                      </Tab>
+                        <Tab text="Chapters">
+                           <content>
+                              <AnchorPane fx:id="CourseList1" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@DashbordDesign.css">
+                                 <children>
+                                    <TableView fx:id="showChap" layoutX="14.0" layoutY="51.0" prefHeight="416.0" prefWidth="663.0" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="51.0">
+                                       <columns>
+                                          <TableColumn fx:id="chapTitleCol" prefWidth="139.0" text="Title" />
+                                          <TableColumn fx:id="chapFile" prefWidth="307.0" text="File" />
+                                          <TableColumn fx:id="chapType" minWidth="0.0" prefWidth="92.0" text="Type" />
+                                          <TableColumn fx:id="ChapAction" prefWidth="124.0" text="Actions" />
+                                       </columns>
+                                    </TableView>
+                                    <Button fx:id="addChap" layoutX="493.0" layoutY="11.0" mnemonicParsing="false" onMouseClicked="#OpenAddChap" prefHeight="34.0" prefWidth="181.0" styleClass="btn_home" stylesheets="@style.css" text="Add new Chapter">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="refreshChaop_btn" layoutX="438.0" layoutY="11.0" mnemonicParsing="false" onAction="#refreshChapTab" prefHeight="34.0" prefWidth="34.0" styleClass="btn_home" stylesheets="@style.css" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                    </tabs>
+                     <styleClass>
+                        <String fx:value="white-bg" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </TabPane>
+               </children>
+                </AnchorPane>
+            </children>
+        </Pane>
+    </children>
+</HBox>

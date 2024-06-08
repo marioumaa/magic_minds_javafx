@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.test2">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="94.0" fitWidth="126.0" layoutX="388.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="upload" layoutX="67.0" layoutY="111.0" mnemonicParsing="false" onMouseClicked="#uploaedImage" text="choose file" />
+   </children>
+</Pane>

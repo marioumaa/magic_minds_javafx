@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: #353A56; -fx-border-width: 8px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StatsPageUserController">
+   <children>
+      <BarChart fx:id="barchart" layoutX="67.0" layoutY="46.0" onMouseClicked="#close" prefHeight="309.0" prefWidth="450.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <FontAwesomeIconView fill="#353a56" glyphName="CLOSE" layoutX="559.0" layoutY="36.0" onMouseClicked="#close" size="25" />
+   </children>
+</AnchorPane>

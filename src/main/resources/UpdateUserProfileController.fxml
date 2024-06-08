@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="666.0" prefWidth="646.0" style="-fx-border-width: 10px; -fx-border-color: #353A56; -fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateUserProfileController">
+   <children>
+      <Text fill="#353a56" layoutX="81.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" wrappingWidth="69.693359375">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#0b335e" layoutX="357.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" wrappingWidth="75.693359375">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#0b335e" layoutX="81.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="75.693359375">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="telInput" layoutX="365.0" layoutY="195.0" prefHeight="25.0" prefWidth="190.0" stylesheets="@TEXTFIELD.css" />
+      <Text fill="#0b335e" layoutX="357.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone" wrappingWidth="75.693359375">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ageInput" layoutX="95.0" layoutY="284.0" prefHeight="25.0" prefWidth="190.0" stylesheets="@TEXTFIELD.css" />
+      <Text fill="#0b335e" layoutX="82.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age" wrappingWidth="75.693359375">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#0b335e" layoutX="357.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" wrappingWidth="75.693359375">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="genderInput" layoutX="365.0" layoutY="285.0" prefHeight="25.0" prefWidth="190.0" stylesheets="@comboBox.css" />
+      <Text fill="#0b335e" layoutX="101.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Picture" wrappingWidth="75.693359375">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="pictureInput" layoutX="95.0" layoutY="489.0" mnemonicParsing="false" onMouseClicked="#UploadImage" prefHeight="29.0" prefWidth="190.0" styleClass="upload-button" stylesheets="@uploadBtn.css" text="Upload File">
+         <font>
+            <Font name="Century Gothic Bold" size="32.0" />
+         </font>
+      </Button>
+      <TextField fx:id="emailInput" layoutX="100.0" layoutY="195.0" prefHeight="25.0" prefWidth="190.0" stylesheets="@TEXTFIELD.css" />
+      <TextField fx:id="firstnameInput" layoutX="95.0" layoutY="120.0" prefHeight="25.0" prefWidth="190.0" stylesheets="@TEXTFIELD.css" />
+      <TextField fx:id="lastNameInput" layoutX="365.0" layoutY="120.0" prefHeight="25.0" prefWidth="190.0" stylesheets="@TEXTFIELD.css" />
+      <Button layoutX="89.0" layoutY="577.0" mnemonicParsing="false" onMouseClicked="#Save" prefHeight="45.0" prefWidth="212.0" style="-fx-background-color: #0b335e;" styleClass="btn_home" stylesheets="@btnSave.css" text="Update" textFill="#f8f8f8">
+         <font>
+            <Font name="Century Gothic Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="414.0" layoutY="577.0" mnemonicParsing="false" onMouseClicked="#Clear" prefHeight="45.0" prefWidth="212.0" styleClass="btn_home" stylesheets="@btnSave.css" text="Clear">
+         <font>
+            <Font name="Century Gothic Bold" size="21.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="106.0" layoutY="586.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/user.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="6.0" layoutY="9.0" prefHeight="79.0" prefWidth="655.0" style="-fx-background-color: #0b335e;" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Text fill="WHITE" layoutX="81.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update User Profile">
+               <font>
+                  <Font name="Century Gothic" size="33.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="25.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/user.png" />
+               </image>
+            </ImageView>
+            <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" layoutX="607.0" layoutY="44.0" onMouseClicked="#Close" size="30" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="29.0" fitWidth="27.0" layoutX="433.0" layoutY="586.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/3389000.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="firstNameControl" layoutX="95.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="200.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="lastNameControl" layoutX="372.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="175.13671875">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="emailControl" layoutX="95.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="201.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="telControl" layoutX="372.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="201.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="ageControl" layoutX="95.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="201.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="genderControl" layoutX="372.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="201.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="pictureControle" layoutX="124.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="443.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="urlText" layoutX="312.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="241.0" />
+      <ImageView fx:id="imageView" fitHeight="79.0" fitWidth="93.0" layoutX="560.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true" />
+      <ComboBox fx:id="roleInput" layoutX="105.0" layoutY="385.0" prefHeight="27.0" prefWidth="450.0" stylesheets="@comboBox.css" />
+      <Text fill="#0b335e" layoutX="113.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" wrappingWidth="75.693359375">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="roleControl" layoutX="106.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="468.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

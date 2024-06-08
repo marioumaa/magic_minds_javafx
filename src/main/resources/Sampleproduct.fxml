@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="box" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="143.0" prefWidth="250.0" spacing="20.0" style="-fx-background-radius: 15;" styleClass="shadow" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SampleproductController">
+   <children>
+      <ImageView fx:id="imagepro" fitHeight="95.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/store.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER_LEFT" prefHeight="136.0" prefWidth="133.0">
+         <children>
+            <Label fx:id="namepro" prefHeight="22.0" prefWidth="142.0" text="Product name">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="categorypro" layoutX="10.0" layoutY="67.0" prefHeight="22.0" prefWidth="142.0" text="Product name">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="pricepro" layoutX="10.0" layoutY="68.0" prefHeight="22.0" prefWidth="142.0" text="\$100">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/stars.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</HBox>

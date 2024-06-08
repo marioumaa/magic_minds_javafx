@@ -1,0 +1,7 @@
+.text-field {
+    -fx-background-color: transparent; /* Fond transparent */
+    -fx-border-color: #353A56; /* Couleur de la bordure bleue */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 20%; /* Rayon de la bordure arrondie */
+    -fx-padding: 5px; /* Marge interne */
+}

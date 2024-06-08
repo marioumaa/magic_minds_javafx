@@ -1,0 +1,14 @@
+.combo-box {
+    -fx-background-color: WHITE; /* Couleur de fond */
+    -fx-border-color: #353A56; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 20%; /* Rayon de la bordure */
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent; /* Couleur de fond du bouton de flèche */
+}
+
+.combo-box .arrow-button .arrow {
+    -fx-background-color: #000000; /* Couleur de la flèche */
+}

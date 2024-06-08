@@ -1,0 +1,18 @@
+
+
+
+.btn_home{
+    -fx-background-color: #f3f35b;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #141313;
+}
+.btn_home:hover {
+    -fx-background-color: green; /* Changes the background to green on hover */
+    -fx-border-color: green; /* Optional: Changes the border color to green on hover */
+}
+.shadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 10, 0.0, 0, 10);
+}

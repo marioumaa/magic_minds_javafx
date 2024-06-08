@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<!-- L'image de fond -->
+
+<AnchorPane id="AnchorPane" prefHeight="896.0" prefWidth="1338.0" style="-fx-background-color: #FFFF;" stylesheets="@fullpackstyling.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterquestionController">
+   <children>
+      <TextField fx:id="descriptionevField" layoutX="128.0" layoutY="539.0" prefHeight="35.0" prefWidth="126.0" promptText="commentaire" style="-fx-background-radius: 30;" />
+      <TextField fx:id="typeField" layoutX="143.0" layoutY="697.0" prefHeight="35.0" prefWidth="126.0" promptText="type" style="-fx-background-radius: 30;" />
+      <TextField fx:id="imageevField" layoutX="126.0" layoutY="610.0" prefHeight="35.0" prefWidth="118.0" promptText="IMAGE question" style="-fx-background-radius: 30;" />
+      <TextField fx:id="nameField" layoutX="80.0" layoutY="404.0" prefHeight="35.0" prefWidth="126.0" promptText="NOM question" style="-fx-background-radius: 30;" />
+      <Canvas fx:id="myCanvas" height="355.0" layoutX="326.0" layoutY="396.0" width="837.0" />
+      <Label layoutX="344.0" layoutY="179.0" prefHeight="60.0" prefWidth="370.0" text="AJOUTER question">
+         <font>
+            <Font name="Calisto MT Bold" size="28.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8571428571428571" startY="0.4">
+               <stops>
+                  <Stop color="#979797e8" />
+                  <Stop color="#96969648" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutY="548.0" prefHeight="17.0" prefWidth="180.0" text="commentaire" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutY="548.0" prefHeight="17.0" prefWidth="180.0" text="type" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="3.0" layoutY="477.0" text="date" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+
+      <Label layoutX="3.0" layoutY="413.0" prefHeight="17.0" prefWidth="140.0" text="NOM Question" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="5.0" layoutY="619.0" prefHeight="17.0" prefWidth="126.0" text="IMAGE question" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Button fx:id="supprimerBoutton" layoutX="767.0" layoutY="330.0" mnemonicParsing="false" onAction="#supprimerquestion" prefHeight="44.0" prefWidth="180.0" style="-fx-background-radius: 30;" text="SUPPRIMER" textFill="RED" />
+      <Button fx:id="ajouterButton" layoutX="325.0" layoutY="330.0" mnemonicParsing="false" onAction="#ajouterquestion" prefHeight="44.0" prefWidth="180.0" style="-fx-background-radius: 30;" text="AJOUTER" textFill="#f80000" />
+      <Button fx:id="afficherBoutton" layoutX="1047.0" layoutY="28.0" mnemonicParsing="false" onAction="#afficherquestion" prefHeight="60.0" prefWidth="273.0" style="-fx-background-radius: 30;" text="repondre" textFill="RED" />
+      <Button fx:id="modifierBoutton" layoutX="551.0" layoutY="330.0" mnemonicParsing="false" onAction="#modifierquestion" prefHeight="44.0" prefWidth="180.0" style="-fx-background-radius: 30;" text="MODIFIER" textFill="RED" />
+      <DatePicker fx:id="dateevField" layoutX="80.0" layoutY="473.0" prefHeight="26.0" prefWidth="180.0" />
+
+      <TableView fx:id="questionTv" layoutX="293.0" layoutY="390.0" onMouseClicked="#choisirev" prefHeight="355.0" prefWidth="1031.0" style="-fx-background-color: #FFE4B5;">
+        <columns>
+          <TableColumn fx:id="nomevTv" prefWidth="127.99999618530273" text="NOM question" />
+            <TableColumn fx:id="imageevTv" minWidth="9.599945068359375" prefWidth="123.0" text="IMAGE question" />
+            <TableColumn fx:id="dateevTv" prefWidth="149.0" text="date" />
+
+            <TableColumn fx:id="descriptionevTv" prefWidth="149.0" text="commentaire" />
+           <TableColumn fx:id="typeTv" prefWidth="239.0" text="type" />
+
+        </columns>
+      </TableView>
+      <Label fx:id="idLabel" layoutX="31.0" layoutY="98.0" prefHeight="18.0" prefWidth="37.0" />
+      <Button fx:id="repondrebutton" layoutX="18.0" layoutY="36.0" mnemonicParsing="false" onAction="#afficherreponses" prefHeight="60.0" prefWidth="273.0" style="-fx-background-radius: 30;" text="Afficher les Reponses" textFill="RED" />
+      <Button layoutX="982.0" layoutY="330.0" mnemonicParsing="false" onAction="#uploadImage" prefHeight="44.0" prefWidth="180.0" text="upload" />
+      <ImageView fx:id="imageview" fitHeight="200.0" fitWidth="201.0" layoutX="1031.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="rechercher" layoutX="1169.0" layoutY="340.0" onKeyPressed="#rechercherev" prefHeight="25.0" prefWidth="161.0" promptText="chercher par NOM ou TYPE" />
+      <ImageView fx:id="QrCode" fitHeight="139.0" fitWidth="168.0" layoutX="23.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" />
+
+   </children>
+</AnchorPane>

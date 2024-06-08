@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Categorie.ShowCategory">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="showCat" layoutX="3.0" layoutY="119.0" prefHeight="266.0" prefWidth="296.0">
+              <columns>
+                <TableColumn fx:id="catTitleCol" prefWidth="117.0" text="Title" />
+                <TableColumn fx:id="catDescCol" prefWidth="178.0" text="description" />
+              </columns>
+            </TableView>
+            <Pane layoutX="314.0" layoutY="119.0" prefHeight="266.0" prefWidth="266.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="32.0" prefHeight="17.0" prefWidth="113.0" text="Ctaegory details" />
+                  <Label layoutX="21.0" layoutY="55.0" text="Label" />
+                  <Label layoutX="21.0" layoutY="104.0" prefHeight="17.0" prefWidth="55.0" text="Label" />
+                  <ImageView fitHeight="98.0" fitWidth="104.0" layoutX="141.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="21.0" layoutY="150.0" text="Label" />
+                  <Label layoutX="21.0" layoutY="186.0" text="Label" />
+                  <Button layoutX="200.0" layoutY="227.0" mnemonicParsing="false" text="Button" />
+                  <Button fx:id="deleteCatBtn" layoutX="80.0" layoutY="226.0" mnemonicParsing="false" onMouseClicked="#DeleteCat" text="Delete" />
+                  <Button fx:id="UpdateCatBtn" layoutX="141.0" layoutY="226.0" mnemonicParsing="false" onMouseClicked="#updateCat" text="Update" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

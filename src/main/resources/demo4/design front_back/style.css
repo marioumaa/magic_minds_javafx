@@ -1,0 +1,91 @@
+.side_bar{
+    -fx-background-color:#353A56;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}
+.inner_pane{
+    -fx-background-color:#748CF1;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #748CF1;
+
+}
+.btn_home{
+    -fx-background-color: #f3f35b;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #141313;
+}
+.btn_home:hover {
+    -fx-background-color: green; /* Changes the background to green on hover */
+    -fx-border-color: green; /* Optional: Changes the border color to green on hover */
+}
+#txt_search{
+    -fx-background-color:#141313;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #141313;
+}
+.pane_1{
+    -fx-background-color:#748CF1;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #748CF1;
+}
+.pane_11{
+    -fx-background-color: #ffff ;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #748CF1;
+}
+.pane_111{
+    -fx-background-color: #ffffff;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #ffffff;
+}
+.white-background{
+    -fx-background-color: #fff;
+
+}
+
+.trasparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.round-layout{
+    -fx-border-radius: 50;
+    -fx-border-color: #D7D7D7;
+}
+
+.selected{
+    -fx-background-color: #f3f3f3;
+}
+
+.mouse-moved:hover{
+    -fx-background-color: #fef437;
+}
+.shadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 10, 0.0, 0, 10);
+}
+.fron_btn{
+    -fx-background-color: rgb(254, 93, 55);
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color: black;
+    -fx-effect: dropshadow(gaussian, rgb(185, 182, 182), 20, 0.3, -5, 5);
+}
